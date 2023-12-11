@@ -35,7 +35,7 @@ class Solution {
                     if ( !( nLLong in Int.MIN_VALUE .. Int.MAX_VALUE ) )
                         continue
                     val nL = nLLong.toInt()
-                    val nLCount = numCountMap[nL.toInt()]?: 0
+                    val nLCount = numCountMap[nL]?: 0
                     if ( nLCount > 0 ) {
                         // i < j < k
                         // nI <= nJ <= nK
